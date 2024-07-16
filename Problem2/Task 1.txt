@@ -1,0 +1,22 @@
+Linear Search
+    Description: Linear search checks each element in the array one by one until the desired element is 
+                 found or the end of the array is reached.
+    
+        Best Case:  𝑂(1) - The element to be found is the first element in the array.
+
+        Average Case: 𝑂(𝑛) - On average, the algorithm will need to check half of the elements in the list before finding the target element, which scales linearly with the number of elements.
+
+        Worst Case: 𝑂(𝑛) - The element to be found is the last element in the array or not present at all, requiring a check of all elements.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Binary Search
+    Description: Binary search works on sorted arrays by repeatedly dividing the search interval in half. If the target value is less than the middle element, the search continues on the left half; if greater, on the right half.
+
+        Best Case: 𝑂(1) - The element to be found is the middle element of the array in the first comparison.
+
+        Average Case: 𝑂(log𝑛) - On average, the binary search will divide the array and search approximately log𝑛 elements.
+
+        Worst Case: 𝑂(log𝑛) - The search interval is repeatedly halved until the target element is found or the interval is empty, leading to a logarithmic number of comparisons.
+        
+-----------------------------------------------------------------------------------------------------------------------------------------

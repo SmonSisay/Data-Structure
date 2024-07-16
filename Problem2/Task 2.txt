@@ -1,0 +1,21 @@
+Performance Comparison:
+    Data Set: Consider a sorted array of size 𝑛
+    Scenario: Searching for a specific element.
+
+        1) Small Data Sets (n is small):
+            Both linear search and binary search are feasible. However, binary search, 
+            despite its logarithmic time complexity, might not show significant performance
+            advantages over linear search due to the small size of the dataset.
+            
+        2) Large Data Sets (n is large):
+            Linear Search: Performs linear scans through the array, which can be inefficient
+              for large datasets, especially when the element is towards the end or not present.
+            Binary Search: Shows significant performance benefits due to its logarithmic time complexity. 
+              It efficiently reduces the search space with each comparison, making it much faster than linear 
+              search for large datasets.
+
+        3) Impact of Sorting:
+            Binary Search: Requires the array to be sorted beforehand. Sorting takes 𝑂(𝑛log𝑛)
+                time complexity in itself. Once sorted, binary search is 𝑂(log𝑛).
+            Linear Search: Works efficiently on unsorted arrays but operates in 𝑂(𝑛)
+                time complexity regardless of the order.

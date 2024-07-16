@@ -1,0 +1,59 @@
+1) Insertion
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Time Complexity: O(n) in the worst case (when inserting at the beginning or middle, as elements need to be shifted).
+Best Case: O(1) (when inserting at the end, assuming there is space).
+
+Linked Lists:
+Time Complexity: O(1) for inserting at the beginning (constant time, as it only involves updating pointers).
+Average Case: O(n) if inserting in the middle or end, as it requires traversal to the insertion point.
+
+2) Deletion
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Time Complexity: O(n) in the worst case.
+Best Case: O(1) (when deleting from the end).
+
+Linked Lists:
+Time Complexity: O(1) for deleting the head node (constant time).
+Average Case: O(n) for deleting a node in the middle or end.
+
+3) Access
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Time Complexity: O(1) (constant time access, as arrays support direct indexing).
+
+Linked Lists:
+Time Complexity: O(n) (linear time access, as it requires traversal from the head to the desired node).
+
+4) Memory Usage
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Contiguous memory allocation can lead to efficient use of CPU cache.
+Fixed size (in static arrays) or over-allocation for dynamic arrays to handle growth, leading to potential wasted memory.
+
+Linked Lists:
+Non-contiguous memory allocation, which can cause more overhead due to additional memory used for pointers.
+More flexible in terms of memory allocation, as it can grow and shrink dynamically without reallocating or resizing.
+
+5) Cache Performance
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Better cache performance due to contiguous memory allocation.
+Accessing elements in sequence benefits from spatial locality.
+
+Linked Lists:
+Poorer cache performance due to non-contiguous memory allocation.
+Accessing elements in sequence does not benefit from spatial locality as much.
+
+6) Usecases
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays:
+Suitable for applications where random access is required, cause it's in the O(1).
+Ideal when the number of elements is known in advance and frequent insertions/deletions are not expected.
+
+Linked Lists:
+Suitable for applications where frequent insertions and deletions are required, especially at the beginning or middle.
+Ideal for implementing dynamic data structures like stacks, queues, and graphs.
+
+-------------------------------------------------------------------------------------------------------------------------------
